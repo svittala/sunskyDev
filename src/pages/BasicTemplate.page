@@ -1,0 +1,13 @@
+<apex:page >
+<style>
+h1 {color:red;}
+h2 {color:blue;}
+</style>
+<h1>Congratulations <br/></h1>
+<!-- this is a sample Visual force page template -->
+<!-- you can have many insert sections each having a different names, these will be replaced by text in main page that includes this template -->
+<apex:insert name="body"/>
+  <br/><h2>This is after the replaced text from body section in mainpage</h2><br/>
+<apex:insert name="body2"/>
+ <br/><h2>This is after the replaced text from body section in mainpage</h2><br/>
+</apex:page>

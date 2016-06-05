@@ -1,0 +1,19 @@
+{
+    "username": "svittala.personal@hotmail.com", 
+    "project_name": "sunskyDev", 
+    "org_url": "", 
+    "namespace": "sunsky", 
+    "metadata_container": "1dcG0000000Q4QmIAK", 
+    "environment": "production", 
+    "workspace": "/home/siva/Salesforce/workspace", 
+    "id": "W8U11PQDGTBXJL36W94HURQW0BPWTGDB", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource"
+    ]
+}

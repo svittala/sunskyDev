@@ -1,0 +1,32 @@
+<apex:page showHeader="false" sidebar="false" controller="ContactsListController">
+    <apex:form >
+        <apex:pageBlock title="Contacts List" id="contacts_list">
+            <!-- Contacts List goes here -->
+			<apex:pageBlockTable value="{! contacts }" var="ct">
+	            <apex:facet name="header"><b><p>Sorted Contact List </p></b></apex:facet>
+
+				<apex:column value="{! ct.FirstName }">
+				    <apex:facet name="header">
+				    	<!-- Using commandLink action to make a server call to the controller function -->
+			        	<apex:commandLink action="{! 	sortByFirstName }"
+	            		reRender="contacts_list">
+	            		<apex:outputText value="{! $ObjectType.Contact.Fields.FirstName.Label }"/>
+		        		</apex:commandLink>
+	    			</apex:facet>
+				</apex:column>
+				<apex:column value="{! ct.LastName }">
+	    			<apex:facet name="header">
+			        	<apex:commandLink action="{! sortByLastName }"
+			            	reRender="contacts_list">
+			            <apex:outputText value="{! $ObjectType.Contact.Fields.Lastname.Label }"/>
+			    		</apex:commandLink>
+				    </apex:facet>
+				</apex:column>	
+			    <apex:column value="{! ct.Title }"/>
+			    <apex:column value="{! ct.Email }"/>
+ 	            <apex:facet name="footer"><p>Information
+              		Accurate as of {!NOW()}</p></apex:facet>
+			</apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

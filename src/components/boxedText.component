@@ -1,0 +1,12 @@
+<apex:component >
+  <!-- this component has 2 attributes and creates a boxed text using the attibutes you define in the page-->
+ <apex:attribute name="text" 
+         description="The contents of the box" 
+         type="string" required="true"/>
+ <apex:attribute name="borderWidth" 
+         description="The width of the border" 
+         type="integer" required="true"/>
+ <div style="border-color:red; border-style:solid; border-width:{! borderWidth}px">
+ <apex:outputText value="{! text}"/>
+ </div>
+</apex:component>

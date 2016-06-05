@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false" standardController="Account" recordSetVar="accounts">
+<apex:form >
+    <apex:pageBlock title="Account List" id="accountList">
+      <apex:selectList value="{! filterId }" size="1">
+                <apex:selectOptions value="{! listViewOptions }"/>
+                <apex:actionSupport event="onchange" reRender="accountList"/>
+            </apex:selectList>
+
+        <apex:pageBlockTable value="{! accounts}" var="a">
+            <apex:column value="{! a.name}"/> 
+            <apex:column value="{! a.phone}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+   </apex:form>
+</apex:page>

@@ -1,0 +1,99 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": "sunsky", 
+    "name": "AccountProcessor", 
+    "tableDeclaration": {
+        "type": "AccountProcessor", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "AccountProcessor"
+    }, 
+    "key": "01pG0000004dV8kIAE", 
+    "variables": [
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 45, 
+                "line": 3
+            }, 
+            "name": "recordIds"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 5
+            }, 
+            "name": "accounts"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 7
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 9
+            }, 
+            "name": "groupedResults"
+        }, 
+        {
+            "type": "Object", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 10
+            }, 
+            "name": "contactcnt"
+        }
+    ], 
+    "id": "01pG0000004dV8kIAE", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "countContacts", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "recordIds"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 3
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

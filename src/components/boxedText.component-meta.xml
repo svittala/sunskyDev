@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>26.0</apiVersion>
+    <description>A sample Component showing boxed texts in visual force pages</description>
+    <label>boxedText</label>
+</ApexComponent>

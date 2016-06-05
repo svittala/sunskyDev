@@ -1,0 +1,34 @@
+<apex:page Controller="StoreFrontController" showHeader="true" tabStyle="Merchandise__c" >
+  <!-- Begin Default Content REMOVE THIS -->
+    <apex:Messages />
+  <apex:form >
+  <h1>Product Catalog</h1>
+  <apex:pageBlock title="Our Products"> 
+  <apex:pageBlockSection columns="1">
+  <apex:pageblockTable value="{!products}" var="pitem">
+      <apex:column headervalue="Product">
+          <apex:outputText value="{!pitem.name}"/>
+      </apex:column>
+      <apex:column headervalue="Description">
+          <apex:outputText value="{!pitem.Description}"/>
+      </apex:column>
+      <apex:column headervalue="Price">
+          <apex:outputText value="{0,number,currency}">
+              <apex:param value="{!pitem.Price}"/>
+          </apex:outputText>
+      </apex:column>
+      <apex:column headervalue="Qty to Buy">
+          <apex:inputText value="{!pitem.qtyToBuy}" rendered="{!pitem.inStock}"/>
+          <apex:outputText value="out of stock" rendered="{! NOT (pitem.inStock)}"/> 
+      </apex:column>
+      </apex:pageblockTable>
+     </apex:pageBlockSection>
+    <apex:pageBlockSection >
+        <apex:commandButton action="{!addToCart}" value="Add to Cart" reRender="shopping_cart"/>
+          <apex:outputpanel title="Your Shopping Cart" id="shopping_cart"> 
+             <apex:outputText value="{!cartContents}" escape="false" /> 
+        </apex:outputpanel>
+    </apex:pageBlockSection>
+   </apex:pageBlock>  
+   </apex:form>
+</apex:page>

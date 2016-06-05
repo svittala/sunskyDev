@@ -1,0 +1,67 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "STATUSFILTER", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 9
+            }, 
+            "type": "String"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": "sunsky", 
+    "name": "NewCaseListControlle", 
+    "tableDeclaration": {
+        "type": "NewCaseListControlle", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 8
+        }, 
+        "name": "NewCaseListControlle"
+    }, 
+    "key": "01pG0000004dUo1IAE", 
+    "variables": [
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 11
+            }, 
+            "name": "results"
+        }
+    ], 
+    "id": "01pG0000004dUo1IAE", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getNewCases", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 10
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+<!-- this is an example of a page using a template-->
+<!-- the template is witin the composition section and each text is substitued in the templates named sections-->
+<apex:page sidebar="false" showHeader="false">
+<apex:composition template="BasicTemplate">
+<apex:define name="body">
+This text will be substituted instead of the template body
+</apex:define>
+<apex:define name="body2">
+This text will be substituted instead of the template body2
+</apex:define>
+</apex:composition>
+</apex:page>

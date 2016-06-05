@@ -1,0 +1,21 @@
+<!-- A Dynamic page displaying Contact details based on user selecting contact link -->
+<!-- the links for the contact details is generated dynamically using param name = value -->
+<apex:page standardController="Account">
+ <apex:pageblock title="{!account.name}">
+ </apex:pageblock>
+ <apex:pageBlock title="Contacts">
+    <apex:form >
+        <apex:dataList value="{!account.Contacts}" var="contact">
+            <apex:commandLink rerender="contactDetails"> {!contact.name}
+                <apex:param name="cid" value="{! contact.id}"/>
+            </apex:commandLink>
+        </apex:dataList>
+    </apex:form>
+  </apex:pageBlock>
+  <apex:pageBlock >
+    <!-- the outputpanel showing contactDetails is rendered dynamically by the rerender call -->
+    <apex:outputPanel id="contactDetails">
+        <apex:detail subject="{!$CurrentPage.parameters.cid}" relatedList="false" title="false"/>
+    </apex:outputPanel>
+  </apex:pageBlock>
+ </apex:page>

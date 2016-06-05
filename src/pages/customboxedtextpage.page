@@ -1,0 +1,7 @@
+<apex:page >
+  <!-- use boxtext component in a page -->
+  <!-- you can add any number of boxedText component and change their properties -->
+  <c:boxedText id="first1" borderWidth="1" text="Example 1" />
+  <c:boxedText id="second1" borderWidth="5" text="Example 5" />
+  
+</apex:page>

@@ -1,0 +1,188 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "recordsProcessed", 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 5
+            }, 
+            "type": "Integer"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [
+        "Database.Stateful", 
+        "Database.Batchable"
+    ], 
+    "constructors": [], 
+    "namespace": "sunsky", 
+    "name": "UpdateContactAddresses", 
+    "tableDeclaration": {
+        "type": "UpdateContactAddresses", 
+        "modifiers": [
+            "global"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 1
+        }, 
+        "name": "UpdateContactAddresses"
+    }, 
+    "key": "01pG0000004dWs1IAE", 
+    "variables": [
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 66, 
+                "line": 7
+            }, 
+            "name": "bc"
+        }, 
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 51, 
+                "line": 16
+            }, 
+            "name": "bc"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 69, 
+                "line": 16
+            }, 
+            "name": "scope"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 18
+            }, 
+            "name": "contacts"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 19
+            }, 
+            "name": "account"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 20
+            }, 
+            "name": "contact"
+        }, 
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 50, 
+                "line": 34
+            }, 
+            "name": "bc"
+        }, 
+        {
+            "type": "AsyncApexJob", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 36
+            }, 
+            "name": "job"
+        }
+    ], 
+    "id": "01pG0000004dWs1IAE", 
+    "methods": [
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "start", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "bc"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 34, 
+                "line": 7
+            }, 
+            "returnType": "QueryLocator", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "execute", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "bc"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "scope"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 16
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "finish", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "bc"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 34
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

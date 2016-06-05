@@ -1,0 +1,6 @@
+<apex:page standardController="Account" sidebar="false" showHeader="true">
+<stylesheet value ="http://developer.force.com/workbooks/vfdemo.css"/>
+  <h1>This is my styled page</h1>
+  This is your new Page: styled
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
