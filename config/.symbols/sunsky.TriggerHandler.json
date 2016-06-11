@@ -1,0 +1,762 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "context", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 9
+            }, 
+            "type": "TriggerContext"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "isTriggerExecuting", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 13
+            }, 
+            "type": "Boolean"
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "loopCountMap", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 4
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "bypassedHandlers", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 5
+            }, 
+            "type": "Set"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [
+        {
+            "properties": [
+                {
+                    "modifiers": [
+                        "private"
+                    ], 
+                    "name": "max", 
+                    "visibility": "PRIVATE", 
+                    "references": [], 
+                    "location": {
+                        "column": 21, 
+                        "line": 188
+                    }, 
+                    "type": "Integer"
+                }, 
+                {
+                    "modifiers": [
+                        "private"
+                    ], 
+                    "name": "count", 
+                    "visibility": "PRIVATE", 
+                    "references": [], 
+                    "location": {
+                        "column": 21, 
+                        "line": 189
+                    }, 
+                    "type": "Integer"
+                }
+            ], 
+            "externalReferences": [], 
+            "innerClasses": [], 
+            "interfaces": [], 
+            "constructors": [
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "LoopCount", 
+                    "parameters": [], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 12, 
+                        "line": 191
+                    }, 
+                    "type": null
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "LoopCount", 
+                    "parameters": [
+                        {
+                            "type": "Integer", 
+                            "name": "max"
+                        }
+                    ], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 12, 
+                        "line": 196
+                    }, 
+                    "type": null
+                }
+            ], 
+            "namespace": "sunsky", 
+            "name": "LoopCount", 
+            "tableDeclaration": {
+                "type": "LoopCount", 
+                "modifiers": [
+                    "private"
+                ], 
+                "references": [], 
+                "location": {
+                    "column": 17, 
+                    "line": 187
+                }, 
+                "name": "LoopCount"
+            }, 
+            "key": null, 
+            "variables": [
+                {
+                    "type": "Integer", 
+                    "modifiers": [], 
+                    "references": [], 
+                    "location": {
+                        "column": 30, 
+                        "line": 196
+                    }, 
+                    "name": "max"
+                }, 
+                {
+                    "type": "Integer", 
+                    "modifiers": [], 
+                    "references": [], 
+                    "location": {
+                        "column": 32, 
+                        "line": 222
+                    }, 
+                    "name": "max"
+                }
+            ], 
+            "id": null, 
+            "methods": [
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "increment", 
+                    "parameters": [], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 20, 
+                        "line": 201
+                    }, 
+                    "returnType": "Boolean", 
+                    "type": null
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "exceeded", 
+                    "parameters": [], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 20, 
+                        "line": 206
+                    }, 
+                    "returnType": "Boolean", 
+                    "type": null
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "getMax", 
+                    "parameters": [], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 20, 
+                        "line": 214
+                    }, 
+                    "returnType": "Integer", 
+                    "type": null
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "getCount", 
+                    "parameters": [], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 20, 
+                        "line": 218
+                    }, 
+                    "returnType": "Integer", 
+                    "type": null
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "setMax", 
+                    "parameters": [
+                        {
+                            "type": "Integer", 
+                            "name": "max"
+                        }
+                    ], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 17, 
+                        "line": 222
+                    }, 
+                    "returnType": "void", 
+                    "type": null
+                }
+            ]
+        }, 
+        {
+            "properties": [], 
+            "externalReferences": [], 
+            "innerClasses": [], 
+            "interfaces": [], 
+            "constructors": [], 
+            "namespace": "sunsky", 
+            "name": "TriggerContext", 
+            "tableDeclaration": {
+                "type": "TriggerContext", 
+                "modifiers": [
+                    "private"
+                ], 
+                "references": [], 
+                "location": {
+                    "column": 16, 
+                    "line": 229
+                }, 
+                "name": "TriggerContext"
+            }, 
+            "key": null, 
+            "variables": [], 
+            "id": null, 
+            "methods": []
+        }, 
+        {
+            "properties": [], 
+            "externalReferences": [], 
+            "innerClasses": [], 
+            "interfaces": [], 
+            "constructors": [], 
+            "namespace": "sunsky", 
+            "name": "TriggerHandlerException", 
+            "tableDeclaration": {
+                "type": "TriggerHandlerException", 
+                "modifiers": [
+                    "public"
+                ], 
+                "references": [], 
+                "location": {
+                    "column": 16, 
+                    "line": 236
+                }, 
+                "name": "TriggerHandlerException"
+            }, 
+            "key": null, 
+            "variables": [], 
+            "id": null, 
+            "methods": []
+        }
+    ], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "TriggerHandler", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 10, 
+                "line": 22
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": "sunsky", 
+    "name": "TriggerHandler", 
+    "tableDeclaration": {
+        "type": "TriggerHandler", 
+        "modifiers": [
+            "virtual", 
+            "public"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 22, 
+            "line": 1
+        }, 
+        "name": "TriggerHandler"
+    }, 
+    "key": "01pG0000004dXHIIA2", 
+    "variables": [
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 56
+            }, 
+            "name": "max"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 57
+            }, 
+            "name": "handlerName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 99
+            }, 
+            "name": "ctx"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 54, 
+                "line": 99
+            }, 
+            "name": "testMode"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 134
+            }, 
+            "name": "handlerName"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 136
+            }, 
+            "name": "exceeded"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 138
+            }, 
+            "name": "max"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 36, 
+                "line": 73
+            }, 
+            "name": "handlerName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 77
+            }, 
+            "name": "handlerName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 43, 
+                "line": 81
+            }, 
+            "name": "handlerName"
+        }
+    ], 
+    "id": "01pG0000004dXHIIA2", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "run", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 31
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "setMaxLoopCount", 
+            "parameters": [
+                {
+                    "type": "Integer", 
+                    "name": "max"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 56
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "clearMaxLoopCount", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 65
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "setTriggerContext", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 94
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "setTriggerContext", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "ctx"
+                }, 
+                {
+                    "type": "Boolean", 
+                    "name": "testMode"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 99
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "addToLoopCount", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 133
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "validateRun", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 146
+            }, 
+            "returnType": "Boolean", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "getHandlerName", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 157
+            }, 
+            "returnType": "String", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "virtual", 
+                "protected"
+            ], 
+            "name": "beforeInsert", 
+            "parameters": [], 
+            "visibility": "PROTECTED", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 167
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "virtual", 
+                "protected"
+            ], 
+            "name": "beforeUpdate", 
+            "parameters": [], 
+            "visibility": "PROTECTED", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 169
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "virtual", 
+                "protected"
+            ], 
+            "name": "beforeDelete", 
+            "parameters": [], 
+            "visibility": "PROTECTED", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 171
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "virtual", 
+                "protected"
+            ], 
+            "name": "afterInsert", 
+            "parameters": [], 
+            "visibility": "PROTECTED", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 173
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "virtual", 
+                "protected"
+            ], 
+            "name": "afterUpdate", 
+            "parameters": [], 
+            "visibility": "PROTECTED", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 175
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "virtual", 
+                "protected"
+            ], 
+            "name": "afterDelete", 
+            "parameters": [], 
+            "visibility": "PROTECTED", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 177
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "virtual", 
+                "protected"
+            ], 
+            "name": "afterUndelete", 
+            "parameters": [], 
+            "visibility": "PROTECTED", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 179
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "bypass", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "handlerName"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 73
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "clearBypass", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "handlerName"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 77
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "isBypassed", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "handlerName"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 81
+            }, 
+            "returnType": "Boolean", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "clearAllBypasses", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 85
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}
