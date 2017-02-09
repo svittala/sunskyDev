@@ -9,6 +9,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>EnvHubMemberDeleteAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>

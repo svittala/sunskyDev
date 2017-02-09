@@ -1,15 +1,18 @@
 {
-    "levels": {
-        "Workflow": "INFO", 
-        "Callout": "INFO", 
-        "System": "DEBUG", 
-        "Database": "INFO", 
-        "ApexCode": "DEBUG", 
-        "Validation": "INFO", 
-        "Visualforce": "DEBUG"
-    }, 
     "users": [
         "005G0000002XYNFIA4"
-    ], 
+    ],
+    "logType": "USER_DEBUG",
+    "debugLevelName": "MAVENSMATE",
+    "levels": {
+        "Workflow": "INFO",
+        "Callout": "INFO",
+        "System": "DEBUG",
+        "Database": "INFO",
+        "ApexCode": "DEBUG",
+        "ApexProfiling": "INFO",
+        "Validation": "INFO",
+        "Visualforce": "DEBUG"
+    },
     "expiration": 480
 }

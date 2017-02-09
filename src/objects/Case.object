@@ -62,6 +62,7 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -230,6 +231,7 @@
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -272,53 +274,54 @@
             <controllingField>Origin</controllingField>
             <picklistValues>
                 <fullName>GC1040</fullName>
+                <default>false</default>
                 <controllingFieldValues>Phone</controllingFieldValues>
                 <controllingFieldValues>Web</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>GC1060</fullName>
+                <default>false</default>
                 <controllingFieldValues>Phone</controllingFieldValues>
                 <controllingFieldValues>Web</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>GC3020</fullName>
-                <controllingFieldValues>Phone</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Phone</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>GC3040</fullName>
-                <controllingFieldValues>Phone</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Phone</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>GC3060</fullName>
-                <controllingFieldValues>Phone</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Phone</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>GC5020</fullName>
-                <controllingFieldValues>Email</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Email</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>GC5040</fullName>
-                <controllingFieldValues>Email</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Email</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>GC5060</fullName>
-                <controllingFieldValues>Email</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Email</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>GC1020</fullName>
-                <controllingFieldValues>Web</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Web</controllingFieldValues>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -329,38 +332,38 @@
         <picklist>
             <picklistValues>
                 <fullName>Installation</fullName>
-                <cssExposed>false</cssExposed>
                 <default>false</default>
+                <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
                 <fullName>Equipment Complexity</fullName>
-                <cssExposed>false</cssExposed>
                 <default>false</default>
+                <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
                 <fullName>Performance</fullName>
-                <cssExposed>false</cssExposed>
                 <default>false</default>
+                <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
                 <fullName>Breakdown</fullName>
-                <cssExposed>false</cssExposed>
                 <default>false</default>
+                <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
                 <fullName>Equipment Design</fullName>
-                <cssExposed>false</cssExposed>
                 <default>false</default>
+                <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
                 <fullName>Feedback</fullName>
-                <cssExposed>false</cssExposed>
                 <default>false</default>
+                <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
                 <fullName>Other</fullName>
-                <cssExposed>false</cssExposed>
                 <default>false</default>
+                <cssExposed>false</cssExposed>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
@@ -377,26 +380,27 @@
             <controllingField>Product__c</controllingField>
             <picklistValues>
                 <fullName>No</fullName>
+                <default>false</default>
                 <controllingFieldValues>GC3020</controllingFieldValues>
                 <controllingFieldValues>GC3040</controllingFieldValues>
                 <controllingFieldValues>GC3060</controllingFieldValues>
                 <controllingFieldValues>GC5020</controllingFieldValues>
                 <controllingFieldValues>GC5040</controllingFieldValues>
                 <controllingFieldValues>GC5060</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Yes</fullName>
+                <default>false</default>
                 <controllingFieldValues>GC1020</controllingFieldValues>
                 <controllingFieldValues>GC1040</controllingFieldValues>
                 <controllingFieldValues>GC1060</controllingFieldValues>
                 <controllingFieldValues>GC5020</controllingFieldValues>
                 <controllingFieldValues>GC5040</controllingFieldValues>
                 <controllingFieldValues>GC5060</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -417,23 +421,23 @@
         <picklist>
             <picklistValues>
                 <fullName>New</fullName>
-                <closed>false</closed>
                 <default>true</default>
+                <closed>false</closed>
             </picklistValues>
             <picklistValues>
                 <fullName>Working</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
             </picklistValues>
             <picklistValues>
                 <fullName>Escalated</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
             </picklistValues>
             <picklistValues>
                 <fullName>Closed</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>

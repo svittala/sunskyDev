@@ -60,6 +60,12 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CaseId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -80,6 +86,16 @@
         <fullName>Discount</fullName>
     </fields>
     <fields>
+        <fullName>Duration</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DurationType</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>EndDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -94,9 +110,25 @@
         <fullName>GrandTotal</fullName>
     </fields>
     <fields>
+        <fullName>IsClosed</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsStopped</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>LineItemCount</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatus</fullName>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatusIcon</fullName>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -142,10 +174,26 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>RootWorkOrderId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ServiceContractId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SlaExitDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SlaStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>StartDate</fullName>
@@ -157,32 +205,26 @@
         <picklist>
             <picklistValues>
                 <fullName>New</fullName>
-                <closed>false</closed>
                 <default>true</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Scheduled</fullName>
-                <closed>false</closed>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Assigned</fullName>
-                <closed>false</closed>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>In Progress</fullName>
-                <closed>false</closed>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Completed</fullName>
-                <closed>false</closed>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Closed</fullName>
-                <closed>true</closed>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -190,6 +232,16 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StatusCategory</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>StopStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Subject</fullName>

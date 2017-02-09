@@ -49,16 +49,19 @@ account.retrieve(
             var html = "";
 
             records.forEach(function(record) {
-                html = html + "<li><a data-id=/" + record.get("Id") + ">" + 
+                html = html + "<li><a data-id=" + record.get("Id") + ">" + 
                                record.get("Name") + "</a></li>";
             });
             ul.innerHTML = html;
         }
     }
 );
-/* sivas notes: it is  interesting that user of href link below results in the mobile app opening accounts page for the links in standard salesfroce mode and not like salesforce1. so we have to add a listener for click event */
+/* sivas notes: it is  interesting that use of href link below 
+results in the mobile app opening accounts page for the links in 
+standard salesfroce mode and not like salesforce1. 
+so we have to add a listener for click event */
 ul.addEventListener("click", function(e) {
-    sforce.one.editrecord(e.target.getAttribute("data-id"));
+    sforce.one.navigateToSObject(e.target.getAttribute("data-id"));
 });
 
 </script>

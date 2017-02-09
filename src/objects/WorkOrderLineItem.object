@@ -43,6 +43,11 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <fields>
+        <fullName>Address</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>AssetId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -59,7 +64,22 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Duration</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DurationType</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsClosed</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
@@ -85,15 +105,15 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Product2Id</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Quantity</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RootWorkOrderLineItemId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>StartDate</fullName>
@@ -105,22 +125,18 @@
         <picklist>
             <picklistValues>
                 <fullName>New</fullName>
-                <closed>false</closed>
                 <default>true</default>
             </picklistValues>
             <picklistValues>
                 <fullName>In Progress</fullName>
-                <closed>false</closed>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Completed</fullName>
-                <closed>false</closed>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Closed</fullName>
-                <closed>true</closed>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -128,6 +144,16 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StatusCategory</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Subtotal</fullName>

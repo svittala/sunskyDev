@@ -110,6 +110,16 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>ParentServiceContractId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RootServiceContractId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ShippingAddress</fullName>
         <trackHistory>false</trackHistory>
     </fields>

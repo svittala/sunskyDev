@@ -44,6 +44,11 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>ParentContractLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Product2Id</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
@@ -51,6 +56,11 @@
     <fields>
         <fullName>Quantity</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RootContractLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ServiceContractId</fullName>

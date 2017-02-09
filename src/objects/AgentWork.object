@@ -5,7 +5,13 @@
         <fullName>AcceptDateTime</fullName>
     </fields>
     <fields>
+        <fullName>ActiveTime</fullName>
+    </fields>
+    <fields>
         <fullName>AgentCapacityWhenDeclined</fullName>
+    </fields>
+    <fields>
+        <fullName>CancelDateTime</fullName>
     </fields>
     <fields>
         <fullName>CapacityPercentage</fullName>
@@ -18,6 +24,15 @@
     </fields>
     <fields>
         <fullName>DeclineDateTime</fullName>
+    </fields>
+    <fields>
+        <fullName>DeclineReason</fullName>
+    </fields>
+    <fields>
+        <fullName>HandleTime</fullName>
+    </fields>
+    <fields>
+        <fullName>IsTransfer</fullName>
     </fields>
     <fields>
         <fullName>LASessionId</fullName>
